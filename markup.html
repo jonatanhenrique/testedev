@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+    <head>
+      <meta charset="UTF-8">
+      <img id="hubblefy-logo-top" src="img/HubblefyLogo.png" alt="Logo Hubblefy">
+      <link rel="stylesheet" type="text/css" href="css/adiciona.css">
+      <title></title>
+
+    </head>
+    <body>
+        <div id="add-members-page">
+          <h1>Membros da Org</h1>
+          <h2>Chegou a hora de adicionar os primeiros membors da sua nova org:</h2>
+
+          <div id="membros-view"></div>
+
+          <!-- FORM -->
+          <form id="form-adiciona" onsubmit="membrosController.adiciona(event)">
+            <p class="nome">
+                
+                <fieldset>
+                  <legend>Nome: </legend>
+                  <input type="text" name="tNome" id="nome" 
+                  size="20" maxlength="30" placeholder="ex. Erin Green" required />
+                </fieldset>
+                
+            </p>
+
+          <p class="email">
+              <fieldset>
+                  <legend>Email:</legend>
+                  <input type="email" name="tEmail" id="email" 
+                  size="20" maxlength="30" placeholder="ex. e.green@company.now" required />
+              </fieldset>
+            </p>  
+
+            <p class="departamento">
+              <fieldset>  
+                  <legend>Departamento:</legend>
+                  <input type="text" name="tDepartamento" id="departamento" 
+                  size="20" maxlength="30" placeholder="ex. Tech" required />
+              </fieldset>  
+            </p>
+
+            <p class="nivel-acesso">
+                <fieldset>   
+                  <legend>Nível de Acesso:</legend>
+                  <select type="text" name="tAcesso" id="nivelAcesso" required>
+                    <option value="user">Usuário</option>
+                    <option value="reader">Leitor</option>
+                    <option value="admin">Admin</option>
+                  </select>
+                </fieldset>
+            </p>
+           
+            <p><button id="salvar" type="submit" onClick=""><b>Salvar</b></button></p>
+            <button id="cancelar" type="reset"><p class="botao-cancelar"><b>Cancelar</b></p></button>
+          </form>
+        </div>
+        <script src="js/Membros.js"></script>
+        <script src="js/MembrosController.js"></script>
+        <script src="js/ListaMembros.js"></script>
+        <script src="js/MembrosView.js"></script>
+        <script>
+        let membrosController = new MembrosController();
+        </script>
+    </body>
+</html>

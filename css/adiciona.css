@@ -1,0 +1,40 @@
+body {
+    background-image: url("../img/HubblefyBG.jpg");
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color: rgb(146, 146, 146);
+}
+
+#salvar{
+    color: white;
+    font-size: 15px;
+    background-color: rgb(190, 190, 190);
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset{
+    color: orangered;
+    border: 2px orangered solid;
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+}
+
+input, select{
+    box-sizing: inherit;
+    width: 100%;
+    border: 2px white solid;
+    margin-right: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+table{
+    margin: auto;
+}
