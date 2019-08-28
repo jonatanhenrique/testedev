@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8">
       <img id="hubblefy-logo-top" src="img/HubblefyLogo.png" alt="Logo Hubblefy">
-      <link rel="stylesheet" type="text/css" href="css/adiciona.css">
+      <link rel="stylesheet" type="text/css" href="css/principal.css">
       <title></title>
 
     </head>
@@ -13,6 +13,10 @@
           <h2>Chegou a hora de adicionar os primeiros membors da sua nova org:</h2>
 
           <div id="membros-view"></div>
+
+          <p><button id="add-member" type="submit" onClick=""><b>Adicionar Membros</b></button></p>
+          <p><button id="go-org" type="submit" onClick=""><b>Ir para ORG</b></button></p>
+          <p><button id="send-invite" type="submit" onClick=""><b>Enviar Convites</b></button></p>
 
           <!-- FORM -->
           <form id="form-adiciona" onsubmit="membrosController.adiciona(event)">
@@ -54,13 +58,14 @@
             </p>
            
             <p><button id="salvar" type="submit" onClick=""><b>Salvar</b></button></p>
-            <button id="cancelar" type="reset"><p class="botao-cancelar"><b>Cancelar</b></p></button>
+            <p><button id="cancelar" type="reset"><b>Cancelar</b></button></p>
           </form>
         </div>
         <script src="js/Membros.js"></script>
         <script src="js/MembrosController.js"></script>
         <script src="js/ListaMembros.js"></script>
         <script src="js/MembrosView.js"></script>
+        <script src="js/ocultar.js"></script>
         <script>
         let membrosController = new MembrosController();
         </script>

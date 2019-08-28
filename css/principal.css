@@ -1,0 +1,91 @@
+body {
+    background-image: url("../img/HubblefyBG.jpg");
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color: rgb(146, 146, 146);
+}
+
+#salvar{
+    color: white;
+    font-size: 15px;
+    background-color: rgb(190, 190, 190);
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#cancelar{
+    color: orangered;
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    border: 0 white solid;
+    background-color: rgb(255, 255, 255);
+}
+
+#add-member{
+    color:white;
+    font-size: 15px;
+    background-color: rgb(9, 184, 9);
+    height: 65px;
+    width: 170px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#go-org, #send-invite{
+    color:white;
+    font-size: 15px;
+    background-color: rgb(236, 76, 13);
+    height: 65px;
+    width: 170px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#remover{
+    background-color: inherit;
+    border: 0.1px rgb(250, 181, 181) solid;
+    position: relative;
+    left:10px;
+    top:0.5px; 
+}
+
+fieldset{
+    color: orangered;
+    border: 2px orangered solid;
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+}
+
+input, select{
+    box-sizing: inherit;
+    width: 100%;
+    border: 2px white solid;
+    margin-right: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+table{
+    margin: auto;
+}
+
+.escondido{
+    display: none;
+}
+
+#lista-de-membros{
+    background-color: rgb(250, 181, 181);
+    border: 2px inherit solid;
+    border-radius: 10px;
+    height: 65px;
+    width: 170px;
+}
+

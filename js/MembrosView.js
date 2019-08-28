@@ -12,7 +12,8 @@ class MembrosView{
 
                     ${model.membros.map(n => `
                         <tr>
-                            <td id="lista-de-membros">${n.acesso}: ${n.nome}</td>
+                            <td id="lista-de-membros"><b>${n.acesso}:</b> ${n.nome} 
+                            <button id="remover" type="remove"><p class="botao-cancelar"><b>x</b></p></button></td>
                         </tr>
                         
                         `).join('')}
